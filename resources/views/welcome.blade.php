@@ -6,7 +6,7 @@
 
         <title>Laravel</title>
 
-        <link href="/css/app.css" rel="stylesheet">
+        <link href="{{mix('/css/app.css')}}" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -23,7 +23,7 @@
             <div id="app">
             <form-component></form-component>
             </div>
-            <script type="text/javascript" src="/js/app.js"></script>
+            <script type="text/javascript" src="{{mix('/js/app.js')}}"></script>
 
             </div>
         </div>

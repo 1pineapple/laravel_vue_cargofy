@@ -26,8 +26,8 @@ class DataSend extends FormRequest
         return [
             'fname' => 'required',
             'lname' => 'required',
-            'phone' => 'required|numeric',
-            'email' => 'required|email',
+            'phone' => 'required|numeric|unique:users',
+            'email' => 'required|email|unique:users',
         ];
     }
 }
