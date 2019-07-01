@@ -21,10 +21,10 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
             <div id="app">
-            <example-component></example-component>
+            <form-component></form-component>
             </div>
             <script type="text/javascript" src="/js/app.js"></script>
-                
+
             </div>
         </div>
     </body>

@@ -13,7 +13,7 @@ class DataSend extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,9 +24,9 @@ class DataSend extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'date' => 'required|date',
-            'phone' => 'required|numeric|max:9|min:9',
+            'fname' => 'required',
+            'lname' => 'required',
+            'phone' => 'required|numeric',
             'email' => 'required|email',
         ];
     }

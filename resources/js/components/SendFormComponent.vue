@@ -90,11 +90,9 @@
                                     message: 'Запит обробленно успішно',
                                     type: 'success'
                                 });
-                            } else if(response.data.error){
-                                this.$message.error('Сталася помилка');
                             }
                         }).catch(e=>{
-                            console.log(e);
+                            this.$message.error('Сталася помилка '+e);
                         });
                     } else {
                         return false;
