@@ -20,7 +20,6 @@ class SenderController extends Controller
         ]]);
 
         $statusCode = $response->getStatusCode();
-        $content = $response->getBody();
         if($statusCode == 201){
             $user = new User();
             $user->fname = $request['fname'];
