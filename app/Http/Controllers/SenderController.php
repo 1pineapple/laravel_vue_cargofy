@@ -29,7 +29,7 @@ class SenderController extends Controller
             $user->save();
             return response()->json(['success'=>true]);
         } else {
-            abort(404);
+            abort($statusCode);
         }
     }
 }
